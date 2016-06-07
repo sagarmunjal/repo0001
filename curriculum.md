@@ -12,6 +12,7 @@ published: true
     - Getting to know language
     - Program Structure
 
+
 2. Value types and Operators
 
     - Values 
@@ -19,10 +20,12 @@ published: true
     - Comparison Operators
     - Loops and Switches
 
+
 3. A closer look of the Functions: the first class objects
 
 	- Declarations
     - Expressions
+
 
 4. Learning in depth about the data types
 
