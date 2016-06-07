@@ -12,7 +12,8 @@ published: true
 
 ### Creation of Javascript
 JavaScript (different from Java) took a mere 10 days to create in May 1995 by this guy 
-### Brendan Eich
+
+### Brenden Eich
 ![Brenden Eich](https://upload.wikimedia.org/wikipedia/commons/d/d1/Brendan_Eich_Mozilla_Foundation_official_photo.jpg)
 
 
