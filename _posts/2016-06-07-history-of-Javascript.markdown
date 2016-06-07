@@ -8,15 +8,13 @@ published: true
 
 
 
-![javascript.png]({{site.baseurl}}/_posts/javascript.png)
+![javascript.png](http://ric.mclaughlin.today/assets/themes/ricify/images/javascript.png)
 
-
-##History of Javascript
-
-Creation of Javascript
+### Creation of Javascript
 JavaScript (different from Java) took a mere 10 days to create in May 1995 by this guy 
-### **Brendan Eich**
-![]({{site.baseurl}}/_posts/Brendan_Eich_Mozilla_Foundation_official_photo.jpg)
+
+### Brenden Eich
+![Brenden Eich](https://upload.wikimedia.org/wikipedia/commons/d/d1/Brendan_Eich_Mozilla_Foundation_official_photo.jpg)
 
 
 - He was tasked with creating a language like Java by Netscape -his then employer
