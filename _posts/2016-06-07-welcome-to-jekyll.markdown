@@ -8,7 +8,7 @@ published: true
 
 
 
-![javascript.png](https://www.google.co.in/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwii3qftrJbNAhUHrJQKHX_nA4AQjRwIAw&url=http%3A%2F%2Fric.mclaughlin.today%2Fportfolio&psig=AFQjCNHNfWl1QuoNfV5k15mh7D07pr2_0Q&ust=1465403843014088)
+![javascript.png](http://ric.mclaughlin.today/assets/themes/ricify/images/javascript.png)
 
 
 ## History of Javascript
