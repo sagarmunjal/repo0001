@@ -1,5 +1,7 @@
 ---
 layout: page
+title : Blog
+url : /blog
 ---
 
 <div class="home">
