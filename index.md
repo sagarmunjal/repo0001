@@ -1,6 +1,5 @@
 ---
 layout: page
-title: About
 ---
 
 Considering the world is increasingly becoming technology-fuelled, coding is a new trend that is catching up in the corporate world, and is thus increasingly in demand. Soon, it will become a widely marketable skill for a range of careers from PR and advertising to design and gaming apart from computational based careers in India too considering we are at the forefront of IT.
