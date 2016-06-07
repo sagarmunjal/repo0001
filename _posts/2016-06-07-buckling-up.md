@@ -1,6 +1,11 @@
 ---
-published: false
+layout: post
+title: Buckling Up!
+date: '2016-06-07 01:51:19 +0530'
+categories: javascript basics
+published: true
 ---
+
 1. Buckling up:
 
     * Setting up the environment
