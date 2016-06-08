@@ -41,7 +41,7 @@ JavaScript ignores any statement which starts with “ // “ and the end of the
 
 Ex 1:
 
-<script src="https://gist.github.com/sagarmunjal/9fd0f90a822dc3660cb93703043ca1c6.js" data-gist-hide-footer="true" data-gist-line="2-4"></script>
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="2-4"></code>
 
 ```
 Var sum = x + y ; // this is a comment and will be ignored.
