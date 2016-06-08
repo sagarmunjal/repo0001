@@ -75,10 +75,10 @@ Backslash operator helps us to evade the error by telling the console to ignore 
 Defining words with single quotes (Another pitfall for beginners ) :
  
 Lets define a string:
-<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="21-24" data-gist-highlight-line="26-27"></code>
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="26-27"></code>
  
 The above example gives an error because the execution stops after the second single quote at ‘how’
  
 To avoid this error we can simply use the backslash.
  
-<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="21-24" data-gist-highlight-line="26,29-30"></code>
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="26,29-30"></code>
