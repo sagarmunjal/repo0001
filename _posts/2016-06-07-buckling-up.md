@@ -41,48 +41,32 @@ JavaScript ignores any statement which starts with “ // “ and the end of the
 
 Ex 1:
 
-<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="2-4"></code>
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="1-2"></code>
 
-```
-Var sum = x + y ; // this is a comment and will be ignored.
-    
-```
 
 #### Multiline Javascript comments : 
 
 Similarly, We can have multiline comments in JavaScript also in which javascript ignore anything between /*  */
 Ex 2:
 
-```
-Function sum(x,y){return x+y}
-/ * this is
-a multiline
-comment * /
-```
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="4-8"></code>
 
 Semicolons are optional but should not always be ignored:
 We write commands in a programming language, these commands are small instructions which are given to the computer called statements. Each statement ends with a semicolon however semicolons are optional after some statements.
  
 Ex : 
-	
-    var a                        // semicolons optional here
-	Var x = 10 ;  Var y = 12 ;   // semicolons are required here
-	Var sum = x + y ;
+
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="10-13"></code>
+
   
 Missing semicolon pitfall related to long sentences:
 Let’s declare a long variable.
  
-var longsentence = “ Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-Aenean commodo ligula eget dolor.
-Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. “
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="15-19"></code>
  
 This would definitely give out an error because JS compiler treats the above as follows:
  
-var longsentence = “ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ; // it gives and error in the first line of code only as there is no ending double quote.
-Aenean commodo ligula eget dolor. ;
-Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ;
-Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. “ ;
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="21-24" data-gist-highlight-line="21"></code>
  
 How to evade this error using backslash ( \ )
  
@@ -91,11 +75,10 @@ Backslash operator helps us to evade the error by telling the console to ignore 
 Defining words with single quotes (Another pitfall for beginners ) :
  
 Lets define a string:
-var x = ‘ how’s your experience with your new mentor ‘   // GIVES AN ERROR, WHY?
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="21-24" data-gist-highlight-line="26-27"></code>
  
-The above example gives an error because the execution stops after the second single quote ‘how’
+The above example gives an error because the execution stops after the second single quote at ‘how’
  
 To avoid this error we can simply use the backslash.
  
-var x = ‘ how\’s your experience with your new mentor ‘   // DOESN’T GIVE AN ERROR!!!
-var x = “ how\’s your experience with your new mentor “ // another alternative is to use double quotes.
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="21-24" data-gist-highlight-line="26,29-30"></code>
