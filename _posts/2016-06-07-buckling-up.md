@@ -41,7 +41,7 @@ JavaScript ignores any statement which starts with “ // “ and the end of the
 
 Ex 1:
 
-<script src="https://gist.github.com/sagarmunjal/9fd0f90a822dc3660cb93703043ca1c6.js"></script>
+<script src="https://gist.github.com/sagarmunjal/9fd0f90a822dc3660cb93703043ca1c6.js" data-gist-hide-footer="true" data-gist-line="2-4"></script>
 
 ```
 Var sum = x + y ; // this is a comment and will be ignored.
@@ -99,6 +99,3 @@ To avoid this error we can simply use the backslash.
  
 var x = ‘ how\’s your experience with your new mentor ‘   // DOESN’T GIVE AN ERROR!!!
 var x = “ how\’s your experience with your new mentor “ // another alternative is to use double quotes.
-
-    
-    
