@@ -81,4 +81,4 @@ The above example gives an error because the execution stops after the second si
  
 To avoid this error we can simply use the backslash.
  
-<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="26,29-30"></code>
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-line="26,29-30"></code>
