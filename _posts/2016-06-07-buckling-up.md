@@ -6,9 +6,9 @@ categories: javascript basics
 published: true
 ---
 
-    1.1 Setting up the environment
-    - Getting to know language
-    - Program Structure
+1.1 Setting up the environment
+- Getting to know language
+- Program Structure
 
 
 ---
