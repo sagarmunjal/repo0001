@@ -57,6 +57,22 @@ _To be honest, the types are complicated to explain because really there are Fun
 6. Assignment operators
 
 
+### 1. Arithmetic operators
+
+<script async src="//jsfiddle.net/zalun/NmudS/embed/js,result/"></script>
+
+### 1. String Concatenation
+
+### 1. Increment/ Decrement
+
+### 1. Bitwise Operators
+
+### 1. Logical operators
+
+### 1. Assignment operators
+
+
+
 ---
 
 #### **2.3 Comparison Operators** 
