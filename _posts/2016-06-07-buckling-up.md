@@ -36,7 +36,7 @@ We will really set up a proper environment where javascript runs how it gets com
 
 There are few characters I would want you to see as follows, as they are widely used in JS.
 
-- Javascript comments : 
+	- Javascript comments : 
 
 They are an awesome way to increase user readability of your code.
 JavaScript ignores any statement which starts with “ // “ and the end of the line.
@@ -46,7 +46,7 @@ Ex :
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="1-2"></code>
 
 
-- Multiline Javascript comments : 
+	- Multiline Javascript comments : 
 
 Similarly, We can have multiline comments in JavaScript also in which javascript ignore anything between /*  */
 
@@ -54,7 +54,7 @@ Ex :
 
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="4-8"></code>
 
-- Semicolons are optional but should not always be ignored:
+	- Semicolons are optional but should not always be ignored:
 
 We write commands in a programming language, these commands are small instructions which are given to the computer called statements. Each statement ends with a semicolon however semicolons are optional after some statements.
  
@@ -63,7 +63,7 @@ Ex :
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="10-13"></code>
 
   
-- Missing semicolon pitfall related to long sentences:
+	- Missing semicolon pitfall related to long sentences:
 
 Let’s declare a long variable.
  
@@ -74,7 +74,7 @@ This would definitely give out an error because JS compiler treats the above as 
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="21-24" data-gist-highlight-line="21"></code>
  
 
-- How to evade this error using backslash ( \ )
+	- How to evade this error using backslash ( \ )
  
 Backslash operator helps us to evade the error by telling the console to ignore the new line.
  
@@ -85,24 +85,27 @@ Lets define a string:
  
 The above example gives an error because the execution stops after the second single quote at ‘how’
  
-- To avoid this error we can simply use the backslash.
+	- To avoid this error we can simply use the backslash.
  
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="26,29-30"></code>
 
+
 ### 2. Values 
 
+
 ---
-### **1.3 Program Structure: ** 
+
+#### **1.3 Program Structure: ** 
 1. Environment
 2. Express and Statements
 3. Variables
 
-#### 1.3.1 Environment :  
+### 1. Environment :  
 
 JS environment comprises of what we program also what we do not program i.e. default. Every set of instruction when together runs in the JavaScript engine is a part of the JS environment. 
 This environment comprises of default and user inputted set of instructions.
 
-#### 1.3.2 Expressions and statements:
+### 2. Expressions and statements:
 An expression is as small as simply typing a value followed by a semicolon ( ; ) 
 For ex : 
 
@@ -112,7 +115,7 @@ But as any languages consists of sub-sentences which combine to make complete se
 
 *To explain fully, if an expression corresponds to sentence fragment, then a statement corresponds to full sentences. *
 
-#### 1.3.3 Variables:
+### 3. Variables:
  
 Variables are a way of assigning values, its something we do in our daily lives to make our work simpler. They are simply used to name something so you do not forget.
 
@@ -122,16 +125,16 @@ That’s why we simply create variables. To remember and to make our lives simpl
  
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="36-40"></code>
  
-- Rightful and wrongful declaration:
+	- Rightful and wrongful declaration:
  
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="44-47"></code>
 
  
-- JS is case sensitive:
+	- JS is case sensitive:
  
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="49-51"></code>
  
-- These are two different variables.
+	- These are two different variables.
  
 There are words which we can’t use while defining variables because they already exist in the JS environment. 
  
@@ -139,7 +142,7 @@ Var, function, return, class, implements
 
 
 
-#### 1.3.4 User Interaction:  
+### 4. User Interaction:  
 a. Alert
 b. Console.log
 c. Prompt
