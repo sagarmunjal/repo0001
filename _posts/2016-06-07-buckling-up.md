@@ -125,16 +125,16 @@ That’s why we simply create variables. To remember and to make our lives simpl
  
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="36-40"></code>
  
-	- Rightful and wrongful declaration:
+> - Rightful and wrongful declaration:
  
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="44-47"></code>
 
  
-	- JS is case sensitive:
+> - JS is case sensitive:
  
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="49-51"></code>
  
-	- These are two different variables.
+> - These are two different variables.
  
 There are words which we can’t use while defining variables because they already exist in the JS environment. 
  
@@ -182,9 +182,3 @@ It is similar to prompt but instead of a value it stores boolean value in the va
 Syntax : 
 
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="64-65"></code>
-
-
-
-
-
-
