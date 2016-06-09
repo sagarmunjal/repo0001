@@ -127,14 +127,12 @@ That’s why we simply create variables. To remember and to make our lives simpl
  
 > - Rightful and wrongful declaration:
  
-<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="44-47"></code>
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="44-48"></code>
 
  
 > - JS is case sensitive:
  
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="49-51"></code>
- 
-> - These are two different variables.
  
 There are words which we can’t use while defining variables because they already exist in the JS environment. 
  
