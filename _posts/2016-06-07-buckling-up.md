@@ -113,7 +113,7 @@ For ex :
 
 But as any languages consists of sub-sentences which combine to make complete sentences, similarly in JS to convey something, we can have a set of expressions which can be complex or simple. 
 
-*To explain fully, if an expression corresponds to sentence fragment, then a statement corresponds to full sentences. *
+*To explain fully, if an expression corresponds to sentence fragment, then a statement corresponds to full sentences.*
 
 ### 3. Variables:
  
