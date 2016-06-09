@@ -7,7 +7,9 @@ published: true
 ---
 
 ## 1.1 Setting up the environment
+
 ## 1.2 Getting to know language
+
 ## 1.3 Program Structure
 
 
