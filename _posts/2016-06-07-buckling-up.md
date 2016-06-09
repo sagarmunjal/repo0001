@@ -136,7 +136,7 @@ That’s why we simply create variables. To remember and to make our lives simpl
  
 There are words which we can’t use while defining variables because they already exist in the JS environment. 
  
-Var, function, return, class, implements
+```Var, function, return, class, implements```
 
 
 
