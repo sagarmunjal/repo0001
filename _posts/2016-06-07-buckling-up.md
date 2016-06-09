@@ -95,7 +95,7 @@ The above example gives an error because the execution stops after the second si
 
 ---
 
-#### ** 1.3 Program Structure: ** 
+#### **1.3 Program Structure:**
 1. Environment
 2. Express and Statements
 3. Variables
