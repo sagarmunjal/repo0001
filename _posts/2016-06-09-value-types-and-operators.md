@@ -2,21 +2,21 @@
 published: true
 layout: post
 ---
-### 1.1 Value types
+### 2.1 Value types
 
-### 1.2 Operators
+### 2.2 Operators
 
-### 1.3 Comparison Operators
+### 2.3 Comparison Operators
 
-### 1.4 Loops and Switches
-
----
+### 2.4 Loops and Switches
 
 ---
 
 ---
 
-#### **Value types** 
+---
+
+#### **2.1 Value types** 
 
 > - Number
 
@@ -46,7 +46,7 @@ _To be honest, the types are complicated to explain because really there are Fun
 
 ---
 
-#### **Operators** 
+#### **2.2 Operators** 
 
 1. Arithmetic operators
 2. String Concatenation
@@ -59,8 +59,8 @@ _To be honest, the types are complicated to explain because really there are Fun
 
 ---
 
-#### **Comparison Operators** 
+#### **2.3 Comparison Operators** 
 
 ---
 
-#### **Loops and Switches** 
+#### **2.4 Loops and Switches** 
