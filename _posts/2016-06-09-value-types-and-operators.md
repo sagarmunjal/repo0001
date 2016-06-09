@@ -18,23 +18,23 @@ layout: post
 
 #### **Value types** 
 
-> -Number
+> - Number
 
 All numbers like 0,3.4 and also pseudo-numerical values like NaN and Infinite.
 
-> -Strings
+> - Strings
 
 “Meow”
 
-> -Boolean
+> - Boolean
 
 True and false values.
                 
-> -Null, undefined
+> - Null, undefined
 
 Special values
 
-> -Objects 
+> - Objects 
 
 Other values like functions, arrays are objects
 
@@ -48,7 +48,7 @@ _To be honest, the types are complicated to explain because really there are Fun
 
 #### **Operators** 
 
-1.Arithmetic operators
+1. Arithmetic operators
 - String Concatenation
 - Increment/ Decrement
 - Bitwise Operators
