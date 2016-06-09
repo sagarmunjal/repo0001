@@ -17,6 +17,8 @@ published: true
 
 ---
 
+---
+
 ### **1.1 Setting up the environment:** 
 
 Google chrome and your workstation. Yes, that’s pretty much all.
