@@ -49,12 +49,12 @@ _To be honest, the types are complicated to explain because really there are Fun
 #### **Operators** 
 
 1. Arithmetic operators
-- String Concatenation
-- Increment/ Decrement
-- Bitwise Operators
+2. String Concatenation
+3. Increment/ Decrement
+4. Bitwise Operators
 - Smart integer operations
-- Logical operators
-- Assignment operators
+5. Logical operators
+6. Assignment operators
 
 
 ---
