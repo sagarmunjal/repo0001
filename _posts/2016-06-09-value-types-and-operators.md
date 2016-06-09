@@ -1,5 +1,6 @@
 ---
 published: true
+layout: post
 ---
 ### 1.1 Value types
 ### 1.2 Operators
