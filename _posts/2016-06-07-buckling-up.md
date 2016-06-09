@@ -43,7 +43,7 @@ JavaScript ignores any statement which starts with “ // “ and the end of the
 
 Ex :
 
-<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="1-2"></code>
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="1-2"></code>
 
 
 > - Multiline Javascript comments : 
@@ -52,7 +52,7 @@ Similarly, We can have multiline comments in JavaScript also in which javascript
 
 Ex :
 
-<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="4-8"></code>
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="4-8"></code>
 
 > - Semicolons are optional but should not always be ignored:
 
@@ -60,18 +60,18 @@ We write commands in a programming language, these commands are small instructio
  
 Ex : 
 
-<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="10-13"></code>
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="10-13"></code>
 
   
 > - Missing semicolon pitfall related to long sentences:
 
 Let’s declare a long variable.
  
-<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="15-19"></code>
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="15-19"></code>
  
 This would definitely give out an error because JS compiler treats the above as follows:
  
-<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="21-24" data-gist-highlight-line="21"></code>
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="21-24" data-gist-highlight-line="21"></code>
  
 
 > - How to evade this error using backslash ( \ )
@@ -81,13 +81,13 @@ Backslash operator helps us to evade the error by telling the console to ignore 
 Defining words with single quotes (Another pitfall for beginners ) :
  
 Lets define a string:
-<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="26-27"></code>
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="26-27"></code>
  
 The above example gives an error because the execution stops after the second single quote at ‘how’
  
 > - To avoid this error we can simply use the backslash.
  
-<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="26,29-30"></code>
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="26,29-30"></code>
 
 
 ### 2. Values 
@@ -109,7 +109,7 @@ This environment comprises of default and user inputted set of instructions.
 An expression is as small as simply typing a value followed by a semicolon ( ; ) 
 For ex : 
 
-<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="33-34"></code>
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="33-34"></code>
 
 But as any languages consists of sub-sentences which combine to make complete sentences, similarly in JS to convey something, we can have a set of expressions which can be complex or simple. 
 
@@ -123,16 +123,16 @@ Now just imagine would it not be weird that everytime if Josh who has curly hair
  
 That’s why we simply create variables. To remember and to make our lives simpler.
  
-<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="36-40"></code>
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="36-40"></code>
  
 > - Rightful and wrongful declaration:
  
-<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="44-48"></code>
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="44-48"></code>
 
  
 > - JS is case sensitive:
  
-<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="49-51"></code>
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="49-51"></code>
  
 There are words which we can’t use while defining variables because they already exist in the JS environment. 
  
@@ -154,7 +154,7 @@ A new small dialog bogs appears on your screen alerting whatever message you ale
  
 Syntax: 
 
-<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="53-54"></code>
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="53-54"></code>
  
 b. Console.log: 
 
@@ -162,7 +162,7 @@ This is pretty much works in a similar way, difference it it logs the message in
  
 Syntax:
  
-<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="56-57"></code>
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="56-57"></code>
  
 c. Prompt: 
 
@@ -170,7 +170,7 @@ Prompt allows to ask user to take values from the user input. This is very impor
 Prompt asks for two arguments, one, which is the text and the default, which is optional argument, stores the default value in the variable.
  
 Syntax:
-<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="59-62"></code>
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="59-62"></code>
 
 
 d. Confirm:  
@@ -179,4 +179,4 @@ It is similar to prompt but instead of a value it stores boolean value in the va
  
 Syntax : 
 
-<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="64-65"></code>
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="64-65"></code>
