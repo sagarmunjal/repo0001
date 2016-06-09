@@ -32,7 +32,7 @@ We will really set up a proper environment where javascript runs how it gets com
 2. Values
 
 
-##### 1. Syntax
+1. Syntax
 
 There are few characters I would want you to see as follows, as they are widely used in JS.
 
@@ -89,7 +89,7 @@ The above example gives an error because the execution stops after the second si
  
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-hide-footer="true" data-gist-line="26,29-30"></code>
 
-##### 2. Values 
+2. Values 
 
 ---
 ### **1.3 Program Structure: ** 
