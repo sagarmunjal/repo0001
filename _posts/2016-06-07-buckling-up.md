@@ -125,17 +125,20 @@ There is a small bug in the statement. When the first sentence ends with a line 
 
 > - **When to use backslash ( \ )**
 
-Backslash is a very powerful tool and its very simple to understand. We can simply talk about the above example and dodge the error using a backslash. 
+
  
 Backslash tells the JS compiler to ignore the linebreak, a single quote and a double quote if in case we want these to be intentionally ignored.
+
+Backslash is a very powerful tool and its very simple to understand. We can simply talk about the above example and few other more examples to dodge the error using a backslash. Let's walk through few small bugs below.  
  
-Lets first fix the above example using a backslash : 
+- BUG FIX ( LONG SENTENCE ) : 
 
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="101-108" data-gist-highlight-line="21"></code>
 
-Defining words with single quotes (Another pitfall for beginners ) :
+- BUG FIX ( when using words having single quotes like HOW'S, STEPHEN'S, etc )  :
  
-Lets define a string:
+Lets define a string having a word having a single quote:
+
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="26-27"></code>
  
 The above example gives an error because the execution stops after the second single quote at ‘how’. We can fix this bug by simply prefixing the single quote by a backslash as shown below. 
