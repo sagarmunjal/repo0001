@@ -47,7 +47,7 @@ There are few characters I would want you to see as follows, as they are widely 
 ```
 
 
-> - Javascript comments : 
+> - Inline comment or Single line comments : 
 
 As you will make progress and become a Javascript ninja, you will understand the power of Source Code Styling. The trait of writing understandable and user friendly code comes with practice and attention to the details. 
 
@@ -61,7 +61,7 @@ Ex :
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="1-2"></code>
 
 
-> - Multiline Javascript comments : 
+> - Comment Block or Multiline comments : 
 
 Similarly, We can have multiline comments in JavaScript also in which javascript ignore anything between /*  */
 
@@ -70,6 +70,8 @@ Ex :
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="4-8"></code>
 
 > - Semicolons are optional but should not always be ignored:
+
+Semicolons are a part of JavaScript syntax language but we will help you where they must not be **LEFT OUT**.
 
 We write commands in a programming language, these commands are small instructions which are given to the computer called statements. Each statement ends with a semicolon however semicolons are optional after some statements.
  
