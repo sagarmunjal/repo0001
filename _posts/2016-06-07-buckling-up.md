@@ -69,11 +69,11 @@ Ex :
 
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="4-8"></code>
 
-> - **Semicolons are optional but should not always be ignored:**
+> - **Semicolons: When and when not to use**
 
 Semicolons simply end a Javascript statement. 
 
-_Statement_ We write commands in a programming language, these commands are small instructions which are given to the computer called _statements_. Each statement ends with a semicolon however semicolons are optional after some statements.
+We write commands in a programming language, these commands are small instructions which are given to the computer called **_statements_**. Each statement ends with a semicolon however semicolons are optional after some statements.
 
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="71-78"></code>
 
@@ -103,7 +103,7 @@ Semicolon is required to end statements but are optional if a statement is follo
 
 (iii) Avoid a semicolon 
 
-- After a closing curly bracket. 
+- After a closing curly bracket of an if, for, while loop and a function body. See the example below to get the drift of it. 
 
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="80-91"></code>
 
@@ -112,29 +112,33 @@ Semicolon is required to end statements but are optional if a statement is follo
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="92-100"></code>
 
 
-> - Missing semicolon pitfall related to long sentences:
+> - Missing semicolon pitfall related to paragraph with multiple lines:
 
-Let’s declare a long variable.
+Let’s declare a paragraph including multiple lines.
  
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="15-19"></code>
  
-This would definitely give out an error because JS compiler treats the above as follows:
+There is a small bug in the statement. When the first sentence ends with a line break, JS compiler puts a semicolon after it and treats it as a separate _statement_. See the demonstration below how javascript compiler puts a semicolon at the line break. 
  
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="21-24" data-gist-highlight-line="21"></code>
  
 
-> - **How to evade this error using backslash ( \ )**
+> - **When to use backslash ( \ )**
+
+Backslash is a very powerful tool and its very simple to understand. We can simply talk about the above example and dodge the error using a backslash. 
  
-Backslash operator helps us to evade the error by telling the console to ignore the new line.
+Backslash tells the JS compiler to ignore the linebreak, a single quote and a double quote if in case we want these to be intentionally ignored.
  
+Lets first fix the above example using a backslash : 
+
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="101-108" data-gist-highlight-line="21"></code>
+
 Defining words with single quotes (Another pitfall for beginners ) :
  
 Lets define a string:
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="26-27"></code>
  
-The above example gives an error because the execution stops after the second single quote at ‘how’
- 
-> - **To avoid this error we can simply use the backslash.**
+The above example gives an error because the execution stops after the second single quote at ‘how’. We can fix this bug by simply prefixing the single quote by a backslash as shown below. 
  
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="26,29-30"></code>
 
