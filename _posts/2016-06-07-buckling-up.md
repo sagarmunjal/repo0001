@@ -47,7 +47,7 @@ There are few characters I would want you to see as follows, as they are widely 
 ```
 
 
-> - Inline comment or Single line comments : 
+> - **Inline comment or Single line comments :** 
 
 As you will make progress and become a Javascript ninja, you will understand the power of Source Code Styling. The trait of writing understandable and user friendly code comes with practice and attention to the details. 
 
@@ -61,7 +61,7 @@ Ex :
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="1-2"></code>
 
 
-> - Comment Block or Multiline comments : 
+> - **Comment Block or Multiline comments :** 
 
 Similarly, We can have multiline comments in JavaScript also in which javascript ignore anything between /*  */
 
@@ -69,7 +69,7 @@ Ex :
 
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="4-8"></code>
 
-> - Semicolons are optional but should not always be ignored:
+> - **Semicolons are optional but should not always be ignored:**
 
 Semicolons are a part of JavaScript syntax language but we will help you where they must not be **LEFT OUT**.
 
@@ -91,7 +91,7 @@ This would definitely give out an error because JS compiler treats the above as 
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="21-24" data-gist-highlight-line="21"></code>
  
 
-> - How to evade this error using backslash ( \ )
+> - **How to evade this error using backslash ( \ )**
  
 Backslash operator helps us to evade the error by telling the console to ignore the new line.
  
@@ -102,7 +102,7 @@ Lets define a string:
  
 The above example gives an error because the execution stops after the second single quote at ‘how’
  
-> - To avoid this error we can simply use the backslash.
+> - **To avoid this error we can simply use the backslash.**
  
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="26,29-30"></code>
 
