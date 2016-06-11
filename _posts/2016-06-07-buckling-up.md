@@ -71,15 +71,47 @@ Ex :
 
 > - **Semicolons are optional but should not always be ignored:**
 
-Semicolons are a part of JavaScript syntax language but we will help you where they must not be **LEFT OUT**.
+Semicolons simply end a Javascript statement. 
 
-We write commands in a programming language, these commands are small instructions which are given to the computer called statements. Each statement ends with a semicolon however semicolons are optional after some statements.
- 
+_Statement_ We write commands in a programming language, these commands are small instructions which are given to the computer called _statements_. Each statement ends with a semicolon however semicolons are optional after some statements.
+
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="71-78"></code>
+
+Semicolons are a part of JavaScript syntax language but we will help you where they must not be **LEFT OUT**. 
+
+A small cheat sheet for THREE CASES when semicolons are 
+
+(i)   Required 
+
+(ii)  Optional
+
+(iii) Avoid a semicolon 
+
+(i)   Required 
+
+Semicolons are REQUIRED when two statements are in the same line. 
+
 Ex : 
 
-<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="10-13"></code>
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="12-14"></code>
 
-  
+(ii)  Optional
+
+Semicolon is required to end statements but are optional if a statement is followed by a line break. 
+
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="10-11"></code>
+
+(iii) Avoid a semicolon 
+
+- After a closing curly bracket. 
+
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="80-91"></code>
+
+- After the round bracket of an if, for, while or switch statement
+
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="92-100"></code>
+
+
 > - Missing semicolon pitfall related to long sentences:
 
 Let’s declare a long variable.
