@@ -22,6 +22,7 @@ published: true
 #### **1.1 Setting up the environment:** 
 
 Google chrome and your workstation. Yes, that’s pretty much all.
+
 We will really set up a proper environment where javascript runs how it gets compiled in a separate post. I would call it a proper environment with some HTML, etc. The google chrome JS console.
 
 ---
@@ -36,7 +37,21 @@ We will really set up a proper environment where javascript runs how it gets com
 
 There are few characters I would want you to see as follows, as they are widely used in JS.
 
+```
+[] square brackets 
+() parenthesis
+; semicolon
+'' single quotes
+"" double quotes 
+, comma separator
+```
+
+
 > - Javascript comments : 
+
+As you will make progress and become a Javascript ninja, you will understand the power of Source Code Styling. The trait of writing understandable and user friendly code comes with practice and attention to the details. 
+
+Writing comments is just one of the many things that sets apart a good programmer and just a run-of-the-mill-programmer. Below we will see few examples of how to write comments.
 
 They are an awesome way to increase user readability of your code.
 JavaScript ignores any statement which starts with “ // “ and the end of the line.
