@@ -188,7 +188,9 @@ The if… else code checks for conditions and runs the code if it’s true or fa
 Most well known comparison operators ar
 e : 
 
-> ==, <= , >= , < , >
+```
+==, <= , >= , < , >
+```
 
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="chap2.txt" data-gist-hide-footer="true" data-gist-line="81-87"></code>
 
