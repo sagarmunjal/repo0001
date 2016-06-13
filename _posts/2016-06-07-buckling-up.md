@@ -130,6 +130,12 @@ There is a small bug in the statement. When the first sentence ends with a line 
 Backslash tells the JS compiler to ignore the linebreak, a single quote and a double quote if in case we want these to be intentionally ignored.
 
 Backslash is a very powerful tool and its very simple to understand. We can simply talk about the above example and few other more examples to dodge the error using a backslash. Let's walk through few small bugs below.  
+
+_Practice yourself :_ 
+
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="111-117"></code>
+
+
  
 - BUG FIX ( LONG SENTENCE ) : 
 
