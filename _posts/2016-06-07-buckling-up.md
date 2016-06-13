@@ -187,17 +187,33 @@ But as any languages consists of sub-sentences which combine to make complete se
 Variables are a way of assigning values, its something we do in our daily lives to make our work simpler. They are simply used to name something so you do not forget.
 
 Now just imagine would it not be weird that everytime if Josh who has curly hair, black eyes, pink lips and short legs would be called as “ I introduce you to the one with the curly hair, black eyes, pink lips and short legs”. Would that really make sense? Would it not be simply easier to say “ i introduce you to Josh”.
- 
+
 That’s why we simply create variables. To remember and to make our lives simpler.
- 
+
+Before we focus on some very simple examples, lets quickly skim through the following pointers. 
+
+- _Variables_ are a storage location pointing to a value associated with an identifier. So, if you are a variable named "Sarah, the girl with curly hair, born in 1990, with the last name George, living in New York", then the long variable in quotes above is the identifier which identifies you. 
+
+- General practice of naming variables is to give a long variable name to those used in computer language, necessitating a description. On the contrary, mathematical variables often have terse, one- or two-character names for brevity in transcription and manipulation. 
+
+- A variable may also be referenced by several different identifiers also. 
+
+> - **Variable declaration :**
+
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="121-125"></code>
+
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="36-40"></code>
+
+> - **Variable names:**
+
+A variable name must start with a letter, _ or a $. Anything else would be erroneous. 
  
-> - Rightful and wrongful declaration:
+> - **Rightful and wrongful declaration:**
  
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="44-48"></code>
 
  
-> - JS is case sensitive:
+> - **JS is case sensitive:**
  
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="49-51"></code>
  
