@@ -148,12 +148,17 @@ The above example gives an error because the execution stops after the second si
 
 ### 2. Values 
 
+We know what makes up the computer level. What human cell is to human body or what atom is to any physical matter, similarly, bits are to a computer program. 
+
+So we can imagine computer programs as a vast big pool of bits. Refer to this [link](http://computer.howstuffworks.com/bytes.htm) to learn more about bits and bytes which make up the values. These bits come together and make a group to denote a certain value which are stored in some form in computers memory. How to manipulate these values in order to get the desired result is what depends on the developers. 
+
+
 
 ---
 
 #### **1.3 Program Structure:**
 1. Environment
-2. Express and Statements
+2. Expressions and Statements
 3. Variables
 
 ### 1. Environment :  
