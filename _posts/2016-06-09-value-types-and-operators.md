@@ -57,37 +57,63 @@ _To be honest, the types are complicated to explain because really there are Fun
 6. Assignment operators
 
 
-### 1. Arithmetic operators
+### 1. Arithmetic operators 
+
+Arithmatics means maths, and here we are talking about simple highschool maths. 
+
+```
++, -, , /, %.
+```
 
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="chap2.txt" data-gist-hide-footer="true" data-gist-line="11-15"></code>
 
 The percentage operator is called the modulus operator and it returns the remainder.
- 
-If one of the operand is string then the other operand is also treated as a string;
 
-<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="chap2.txt" data-gist-hide-footer="true" data-gist-line="18-21"></code>
+```
+i = 5 % 2; // 1
+i = 8 % 3; // 2
+i = 6 % 3; // 0
+```
+
 
 ### 2. String Concatenation
 
+_Concatenation_ in simple english means to join or link together to form a chain or series. 
+
+``` var jointhesewords = "joining" + "the" + "strings" ;
+```
+
+> - **If one of the operand is string then the other operand is also treated as a string;**
+
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="chap2.txt" data-gist-hide-footer="true" data-gist-line="18-21"></code>
 
 ### 3. Increment/ Decrement
 These are the two increment and decrement operator and they change the variable value itself.
+We can simply call them as plus 1, denoted as ++1 and subtract 1 denoted as --1. 
 
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="chap2.txt" data-gist-hide-footer="true" data-gist-line="22-27"></code>
 
 The postfix and prefix of the operator returns different values.
+
+> - **Postfix**
+
+> - **Prefix**
+
+
+
 ### 4. Bitwise Operators
-These are obsolete operators and are rarely used:
+
+These are obsolete operators and are rarely used, but there are few hacks that we might want to have a look at. 
  
 For a detailed summary on bitwise operators refer (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators#(Bitwise_AND))
  
-And
-or
-Xor
-Not
-Left shift
-Right shift
-Zero fill right shift
+And (&)
+Or  (|)
+Xor (^)
+Not (~)
+Left shift 	(<<)
+Right shift (>>)
+Zero fill right shift (>>>)
  
 One of the exception of bitwise operator is the not operator. ( ~ )
 
@@ -99,14 +125,33 @@ One of the exception of bitwise operator is the not operator. ( ~ )
 ### 5. Logical operators
 
 a. OR ( || )
+
 b. AND ( && )
+
 c. NOT ( ! )
 
-A logical boolean operator can be applied to anything and a non boolean value is converted into a boolean value, in order to evaluate its value.
+
+```
+alert( true && false ) // false
+ 
+alert( false || true ) // true
+ 
+alert( !false ) // true
+
+```
+> - **Values that have a boolean value false, no matter what:**
+
+There are few values like an empty string ( "" ), 0 and special values like null and undefined. 
+
+> - **Logical operators can be applied to even non-boolean values:**
+
+A logical boolean operator can be applied to anything and in case of a non boolean value, in order to evaluate its value it is converted into a boolean value.
+
+
 These are short circuit  operators.
 For eg:
 
-<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="chap2.txt" data-gist-hide-footer="true" data-gist-line="29-44"></code>
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="chap2.txt" data-gist-hide-footer="true" data-gist-line="40-44"></code>
 
 a. OR ( || )
 
@@ -129,7 +174,9 @@ Not operator turns the operator into boolean value and negates it.
 
 ### 6. Assignment operators
 
+```
 > = , += , *= , /= , >>= , <<= , >>>= , &= , |= , ^=
+```
 
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="chap2.txt" data-gist-hide-footer="true" data-gist-line="74-78"></code>
 ---
@@ -183,5 +230,3 @@ The condition part consists of three parts,
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="chap2.txt" data-gist-hide-footer="true" data-gist-line="105-108"></code>
 
 Now the above example alerts x, starting from x = 0 and loops until the condition fails while x =10 and terminates at x = 10.
-
-
