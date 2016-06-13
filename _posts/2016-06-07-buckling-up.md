@@ -224,14 +224,9 @@ There are words which we can’t use while defining variables because they alrea
 
 
 ### 4. User Interaction:  
-a. Alert
-b. Console.log
-c. Prompt
-d. Confirm
-e. Comments
 
- 
-a. Alert: 
+
+> - **Alert**
 
 A new small dialog bogs appears on your screen alerting whatever message you alert in the parenthesis. Check out the syntax below and try yourself.
  
@@ -239,7 +234,7 @@ Syntax:
 
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="53-54"></code>
  
-b. Console.log: 
+> - **Console.log**
 
 This is pretty much works in a similar way, difference it it logs the message in the console that we use to define and declare our JS types etc.
  
@@ -247,7 +242,7 @@ Syntax:
  
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="56-57"></code>
  
-c. Prompt: 
+> - **Prompt**
 
 Prompt allows to ask user to take values from the user input. This is very important to define customized variables.
 Prompt asks for two arguments, one, which is the text and the default, which is optional argument, stores the default value in the variable.
@@ -256,10 +251,14 @@ Syntax:
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="59-62"></code>
 
 
-d. Confirm:  
+> - **Confirm** 
 
 It is similar to prompt but instead of a value it stores boolean value in the variable corresponding to the “OK” and “cancel” the user is prompted with. See the following example to understand better.
  
 Syntax : 
 
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="gistfile1.txt" data-gist-hide-footer="true" data-gist-line="64-65"></code>
+
+> - **Comments**
+
+Comments as discussed above play a very crucial role in increasing the user interactivity.
