@@ -15,7 +15,7 @@ published: true
 
 2. Value types and Operators
 
-    - Values 
+    - Value types
     - Operators
     - Comparison Operators
     - Loops and Switches
