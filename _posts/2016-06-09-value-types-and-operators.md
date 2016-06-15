@@ -62,7 +62,7 @@ _To be honest, the types are complicated to explain because really there are Fun
 Arithmatics means maths, and here we are talking about simple highschool maths. 
 
 ```
-+, -, , /, %.
++, -, , /, %
 ```
 
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="chap2.txt" data-gist-hide-footer="true" data-gist-line="11-15"></code>
@@ -95,10 +95,15 @@ We can simply call them as plus 1, denoted as ++1 and subtract 1 denoted as --1.
 
 The postfix and prefix of the operator returns different values.
 
-> - **Postfix**
+> - **Postfix (i++)**
 
-> - **Prefix**
+The postfix operator returns a value and then increments. 
 
+> - **Prefix (++i)**
+
+The prefix operator increments and then returns the value
+
+<code data-gist-id="4c11fe53e8066aa419103bcf51d88d38" data-gist-hide-footer="true" data-gist-line="1-14"></code>
 
 
 ### 4. Bitwise Operators
@@ -107,19 +112,31 @@ These are obsolete operators and are rarely used, but there are few hacks that w
  
 For a detailed summary on bitwise operators refer (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators#(Bitwise_AND))
  
+```
 And (&)
+
 Or  (|)
+
 Xor (^)
+
 Not (~)
+
 Left shift 	(<<)
+
 Right shift (>>)
+
 Zero fill right shift (>>>)
+```
  
 One of the exception of bitwise operator is the not operator. ( ~ )
 
-> -Smart use of bitwise operator:
+> - **Smart use of bitwise operator:**
 
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="chap2.txt" data-gist-hide-footer="true" data-gist-line="28-37"></code>
+
+> - **Practice Yourself**
+
+<code data-gist-id="4c11fe53e8066aa419103bcf51d88d38" data-gist-hide-footer="true" data-gist-line="16-37"></code>
 
 
 ### 5. Logical operators
@@ -170,23 +187,31 @@ c. NOT ( ! )
 Not operator turns the operator into boolean value and negates it.
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="chap2.txt" data-gist-hide-footer="true" data-gist-line="65-71"></code>
 
+> - **Practice Yourself**
+
+<code data-gist-id="4c11fe53e8066aa419103bcf51d88d38" data-gist-hide-footer="true" data-gist-line="40-50"></code>
+
 
 
 ### 6. Assignment operators
 
 ```
-> = , += , *= , /= , >>= , <<= , >>>= , &= , |= , ^=
+>= , += , *= , /= , >>= , <<= , >>>= 
 ```
 
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="chap2.txt" data-gist-hide-footer="true" data-gist-line="74-78"></code>
+
+> - **Practice Yourself**
+
+<code data-gist-id="4c11fe53e8066aa419103bcf51d88d38" data-gist-hide-footer="true" data-gist-line="52-63"></code>
+
 ---
 
 #### **2.3 Comparison Operators** 
 
 The if… else code checks for conditions and runs the code if it’s true or false
  
-Most well known comparison operators ar
-e : 
+Most well known comparison operators are : 
 
 ```
 ==, <= , >= , < , >
