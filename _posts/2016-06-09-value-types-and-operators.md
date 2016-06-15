@@ -170,7 +170,7 @@ For eg:
 
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="chap2.txt" data-gist-hide-footer="true" data-gist-line="40-44"></code>
 
-a. OR ( || )
+a. OR ( | | )
 
 Logical OR is an important choice when you have multiple operands and want to print the first value which is true.
 
