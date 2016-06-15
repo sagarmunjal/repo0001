@@ -209,7 +209,9 @@ Not operator turns the operator into boolean value and negates it.
 
 #### **2.3 Comparison Operators** 
 
-The if… else code checks for conditions and runs the code if it’s true or false
+The if… else code checks for conditions using the _comparison operators_ and runs the code if it’s true or false. On the basis of the result being true we move on to the next code block. 
+
+It is simple to understand by an analogy, if you have solved the question and the condition is true then drink your beer or else finish your assignment. 
  
 Most well known comparison operators are : 
 
@@ -219,7 +221,7 @@ Most well known comparison operators are :
 
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="chap2.txt" data-gist-hide-footer="true" data-gist-line="81-87"></code>
 
-It is also possible to specify additional condition using else… if…
+Next we will discuss the loops and switches which make use of the comparison operators. 
 
 ---
 
