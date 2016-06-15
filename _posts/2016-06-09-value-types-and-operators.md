@@ -229,10 +229,15 @@ Next we will discuss the loops and switches which make use of the comparison ope
 
 ```
 a. The while and do...while loops
+
 b. The for loop
+
 c. Jumping out with breaks
+
 d. Skipping with continue
+
 e. Jumping over blocks with labels
+
 f. The switch construct
 ```
 
