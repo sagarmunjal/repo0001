@@ -227,43 +227,141 @@ Next we will discuss the loops and switches which make use of the comparison ope
 
 #### **2.4 Loops and Switches**
 
+In life we often come across real time situtions in which we have to look for an answer by performing a similar set of task under certain condition. 
+
+For ex : If my gf wants to have strawberry cheese cake, and I have ten bakeries namely bakery1, bakery2 and so on.  
+
+Now, I will go to each bakery ( bakery1, bakery2, and so on...)  until I find the cake.
+
+Similarly, we use the above mentioned comparison operators combined with loops to achieve certain results in the programs that we write. 
+
 ```
 a. The while and do...while loops
 
 b. The for loop
 
-c. Jumping out with breaks
-
-d. Skipping with continue
-
-e. Jumping over blocks with labels
-
-f. The switch construct
+c. The switch construct
 ```
 
 
 a. The while and do...while loops
 
-It checks the condition before and every iteration
+These are two types of while loops and there is a slight difference between them.  
+Let's have a closer look towards their execution. 
 
-<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="chap2.txt" data-gist-hide-footer="true" data-gist-line="89-98"></code>
+> - **WHILE LOOP**
+
+```
+SYNTAX : 
+while (condition) {
+    code block to be executed
+}
+```
+
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="chap2.txt" data-gist-hide-footer="true" data-gist-line="112-114"></code>
+
+> - **DO WHILE LOOP**
+
+```
+SYNTAX : 
+do {
+    code block to be executed
+}
+while (condition);
+```
+
+
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="chap2.txt" data-gist-hide-footer="true" data-gist-line="116-121"></code>
  
 The only difference between while and do while loop is that the latter executes at least once.
 
 b. The for loop
 
-The for loop consists of a condition within parenthesis, with three pars and a separate body to be executed.
+The for loop consists of a condition within parenthesis, with three parameters and a separate body to be executed.
  
 It looks like this
 
-<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="chap2.txt" data-gist-hide-footer="true" data-gist-line="100-104"></code>
+```
+// SYNTAX
+for (x = 0 ; x < 10 ; x ++){
+// do something
+}
 
+```
  
-The condition part consists of three parts,
-- One is the *variable* and the initializing of the variable.
-- Second is the *condition*
-- And third is the *increment or decrement expression*
+The condition part which is enclosed in the parenthesis ( ) consists of three parts as follows : 
+- One is the *variable* and the initializing of the variable. In the above example it is denoted by x = 0. 
+- Second is the *condition*. This condition is to tell the loop to keep executing till this condition is true. 
+- And third is the *increment or decrement expression*. Increment or Decrement operator is applied to 'x' so that the loop ends after the condition is false. 
 
 <code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="chap2.txt" data-gist-hide-footer="true" data-gist-line="105-108"></code>
 
 Now the above example alerts x, starting from x = 0 and loops until the condition fails while x =10 and terminates at x = 10.
+
+
+> - **Practice Yourself**
+
+```
+Question 1 : Write a for loop to log "the number is 50 and is even" for all even numbers and "the number is 51 and is odd" for all odd numbers for numbers between 50 to 70. 
+
+Question 2 : write table of 9 and log the table of 9 in the format " 1 * 9 = 9 " , " 2 * 9 = 18 " upto " 10 * 9 = 90 ". 
+
+Question 3 : Now using the above method of logging table of 9, log tables from 1 - 10 in the same format. 
+
+```
+
+> - **Jumping out with break**
+
+_Infinite loops_ are loops which iterate infinitely because the condition mentioned is always true. 
+
+For ex : 
+
+```
+// This is an infinite loop 
+var i = 0 ; 
+while (true){
+console.log(i ++ )
+}
+```
+
+Infinite loops which run eternally can be stopped by using the break statement as follows. 
+
+```
+// Applying breaks to an infinite loop 
+var i = 0 ; 
+while (true){
+console.log(i ++ )
+if (i>5) break
+}
+```
+
+c. Switch statements : 
+
+Switch statements work under certain case value pairs. See the syntax below for better understanding. 
+
+
+```
+switch(x) {
+  case 'value1':  // if (x === 'value1')
+    ...
+  case 'value2':  // if (x === 'value2')
+    ...
+  default:      
+    // default code
+}
+```
+
+Lets see at a working example of switch statement : 
+
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="chap2.txt" data-gist-hide-footer="true" data-gist-line="133-147"></code>
+
+The above example has a flaw that it does not use "break; " statement after the second case and hence all the cases after the second case are executed. 
+We can simply stop that by using a break statement as shown below. 
+
+
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="chap2.txt" data-gist-hide-footer="true" data-gist-line="152-167"></code>
+
+This is a simple user input example of a switch statement. 
+
+<code data-gist-id="9fd0f90a822dc3660cb93703043ca1c6" data-gist-file="chap2.txt" data-gist-hide-footer="true" data-gist-line="174-194"></code>
+
