@@ -3,4 +3,4 @@ published: true
 layout: post
 ---
 
-hello
+a-closer-look-at-the-functions-the-first-class-objects
