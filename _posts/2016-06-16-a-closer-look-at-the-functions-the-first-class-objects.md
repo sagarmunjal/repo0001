@@ -11,9 +11,7 @@ layout: post
 
 ### 3.4 Self executing functions 
 
-### 3.5 Name function expression 
-
-### 3.6 Function naming 
+### 3.5 Function naming 
 
 ---
 ---
@@ -173,7 +171,7 @@ However, in SYNTAX 2, when we have declared the statement we do not need the par
 ---
 
 
-#### **3.6 Function naming**
+#### **3.5 Function naming**
 
 A function is always an action that is being performed, so the name should always be a verb such as calculateSum, calculateArea, product, etc. 
 
