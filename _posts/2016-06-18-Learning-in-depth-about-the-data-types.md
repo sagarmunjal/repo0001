@@ -124,6 +124,7 @@ str.slice(-10, -1 ) // this means it will now start with the -10th character fro
 Strings are compared lexicographicaly.
 
 which means the following
+
 ```
 "s1" < "s2" // outputs true
 "S1" < "S2" // outputs true
@@ -138,7 +139,156 @@ which means the following
 
 ## **4.2 Number, Math**
 
+JS datatype numbers include floating point decimals, but there may or may not be a fractional component. If they do not have a fractional componenet they are treated as integers, which range from -2^53 to 2^53
+
+
+```
+// The following are valid integers:
+
+var negativeNumber = -1000;
+var zero = 0;
+var fourDigits = 2534;
+```
+
+The floating-point representation has a decimal, with a decimal component to the right. You also can represent the number as an exponent, using scientific notation. 
+
+```
+// All of the following are valid floating-point numbers:
+var someFloat = 0.3555
+var anotherNumber = 144.006;
+var negDecimal = -2.3;
+var lastNum = 19.5e-2 //which is equivalent to .195
+var zeroDecimal = 12.0;
+```
+
+> - **Two special type numbers are Infinity && negative Infinity**
+
+Any interger or floating point divided by 0 results in Infinity. 
+
+```
+// Infinity
+
+var x = 10/0
+console.log(x)
+
+// negative-Infinity
+
+var x = -10/0
+console.log(x)
+
+```
+
+> - **Written forms**
+
+In Javascript we can have many ways to represent numbers
+Hexadecimal 
+Octal
+Scintific notation
+
+Hexadecimal and Octal representation
+
+```
+
+alert( 0xFF ) // 255 in hexadimal form, starts with 0x
+alert( 010 ) // 8 in octal form, starts with 0
+
+```
+
+Scientific notation : 
+
+```
+// scientific form: 3 with 5 zeros
+alert( 3e5 )  // 300000
+alert( 3e-5 ) // 0.00003
+
+```
+
+> - **NaN**
+
+If an operation can't be performed then it returns a pseudo numeric value i.e. NaN
+
+A NaN value is not even equal to itself. 
+
+```
+console.log( 0/0 ) // returns NaN
+console.log( NaN == NaN) // returns false
+console.log( NaN === NaN ) // returns false
+```
+
+An operation which returns a NaN or not can be checked using the "isNaN" method. 
+
+```
+x = 0/0;
+console.log(isNaN(x)); // returns true
+```
+
+> - **Conversion to a number**
+
+We can simply convert strings of numbers to numbers using the (+) plus operation.
+
+```
+var s = "12.34"
+console.log( +s )  // 12.34
+
+alert( +"  12")  // 12
+alert( +" \n34  \n") // 34, newlines are whitespace symbols too
+
+alert( +"12test" )  // if a number cant be converted then it returns "NaN"
+
+
+```
+
+> - **Permissive String conversion using : parseInt and parseFloat**
+
+Usually there are a lot of times when we need to convert strings to numbers such as "12px" used in CSS, etc. 
+
+parseInt and its friend parseFloat convert the value character by character until they meet something impossible to convert. Then it stops and returns what could be converted.
+
+```
+alert( parseFloat('12.3.4') ) // 12.3, 1st dot is fine, but not the 2nd
+
+
+alert( parseInt('0xFF') ) // 255
+alert( parseInt('010') )  // in some browsers 8, because 0 means octal
+
+alert( parseInt('010', 10) ) // If you want be sure that “010” means 10, use the second optional argument to pass the radix
+
+alert( parseInt('a123') ) // Note, parseInt/parseFloat returns NaN if conversion stops at first char:
+
+```
+
+> - **Rounding**
+
+a. Math.floor - Rounds down
+b. Math.ceil  - Rounds up
+c. Math.round - Rounds to nearest
+
+
+```
+alert( Math.floor(3.1) )  // 3
+alert( Math.ceil(3.1) )   // 4
+alert( Math.round(3.1) )  // 3
+
+```
+
+Note the behavior of the three methods on negative integers. 
+
+```
+alert( Math.floor(-3.1) )  // -4, rounds to nearest less than -3.1
+alert( Math.ceil(-3.1) )   // -3, rounds to nearest greater than -3.1
+
+```
+
+> - **Math.random**
+
+Math.random alerts a number between 0 and 1. 
+
+```
+console.log(Math.random())
+```
 ---
+
+
 
 ## **4.3 Objects**
 
