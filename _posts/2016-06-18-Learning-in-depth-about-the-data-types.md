@@ -296,8 +296,223 @@ console.log(Math.random())
 
 ## **4.3 Objects**
 
+Objects in Javascript can be a very descriptive topic which can be talked about using many approaches. 
+We will start by calling them an array of one or more key and value pairs, in which there can be keys which might have another array of key value pairs i.e. _nested objects_ 
+
+> - **Creating Objects**
+
+We can create array using one of the two syntaxes. 
+
+1. o = new Object()
+2. o = { }  // the same
+
+Objects can be created and values can be added/deleted using the dot notation. 
+
+```
+var obj = {}       // create empty object (associative array)
+ 
+obj.name = 'John'  // add entry with key 'name' and value 'John'
+ 
+// Now you have an associative array with single element
+// key:'name', value: 'John'
+ 
+alert(obj.name) // get value by key 'name'
+ 
+delete obj.name // delete value by key 'name'
+ 
+// Now we have an empty object once again
+
+```
+
+We can even use square brackets instead of the dot notation
+
+```
+var obj = {}
+ 
+obj['name'] = 'John'
+ 
+alert(obj['name'])
+ 
+delete obj['name']
+
+```
+
+If a value in an object is not defined then it simply returns undefined. 
+
+> - **Checking if a key exists or not**
+
+```
+// Hopefully, there is a special "in" operator to check for keys. It’s syntax is "prop" in obj, like this
+var obj = { key: undefined }
+ 
+alert("key" in obj) // true, key exists
+alert("blabla" in obj) // false, no such key
+
+```
+
+> - **Iterating over Key Value pairs**
+
+This is a special function. 
+
+There is a special for..in syntax to list object properties:
+
+for(key in obj) {
+  ... obj[key] ...
+}
+
+```
+var dog = {name : "boozo", age : 1, color : "golden brown"}
+for(i in dog) {
+console.log(i + " = " +dog[i])
+}
+```
+
+> - **Objects variables are nothing but references**
+
+A variable which is assigned to object actually keeps reference to it. That is, a variable stores kind-of pointer to real data.
+
+You can use the variable to change this data, this will affect all other references.
+
+```
+var user = { name: 'John' }; // user is reference to the object
+ 
+var obj = user;  // obj references same object
+ 
+obj.name = 'Peter'; // change data in the object
+ 
+alert(user.name);  // now Peter
+
+```
+
+> - **Properties and methods**
+
+Objects are not only used to stored key value pairs. 
+Objects are also used to store functions called _methods_
+
+```
+var user = {name : "mr x", getName: function(name){return this.name}}
+console.log(user.getName());
+```
+
+Note : the use of 'this' keyword in the above example. It refers to the object user in the above example. We will study the use of this in a separate blog post. 
 
 
+> - **Another way of creating object**
+
+We can also create the object by calling a function with a new directive. Lets see the following example for better understanding. 
+
+```
+function animal(name,age,insta){
+this.name = name; 
+this.age = age; 
+this.instagramprofile = insta
+}
+var dog = new Animal('ziggie',02,'www.instagram.com/ziggieboozo)
+```
+
+> - **Built in objects **
+
+In Javascript library we have built in objects. 
+
+Math - for methods like getting a random number 
+Date - for using date method
+RegEx - for regular expressions
 ---
 
 ## **4.4 Arrays**
+
+Arrays are what you understand literally by the word itself i.e. a range of particular type of things. 
+Let's see how to define them. 
+
+Arrys can be defined by simply using square brackets. 
+
+```
+// Array definition : 
+
+var animals = ['kangaroo', 'chimpanzee', 'zebra', 'tortoise']
+console.log(animals)
+
+```
+In Arrays each item has its own index which starts with 0. 
+
+```
+var cars = ['lamborghini','ferrari','porsche','maybach','cadillac']
+console.log(cars[0]); // outputs "lamborghini"
+
+// a simpler way to log all the items would be a simple for loop
+
+for (i= 0 ; i < cars.length ; i++){
+console.log(i + " = " +cars[i])
+}
+
+```
+
+> - **Methods on array**
+
+There are two widely used methods on arrays POP and PUSH. 
+
+Let's discuss them in detail.
+POP method - This method removes last item and returns it.
+
+```
+var cars = ['lamborghini','ferrari','porsche','maybach','cadillac']
+cars.pop() // outputs "cadillac"
+
+console.log(cars) ; // outputs ['lamborghini','ferrari','porsche','maybach']
+```
+
+A counterpart to pop is push which appends an element to the array. Let’s say we’ve forgotten a Aston Martin
+
+```
+cars.push('Aston Martin')
+console.log(cars ) //outputs ['lamborghini','ferrari','porsche','maybach','Aston Martin']
+```
+
+> - **Methods shift and unshift**
+
+Methods pop/push manipulate with the end of array, but you can also use shift to shift off first value or unshift to prepend a value to an array.
+
+```
+var veggies = ['clove','brinjal','lady finger','peas','potato','carrot']
+
+veggies.unshift('radish')
+
+console.log(veggies); //outputs ["radish", "clove", "brinjal", "lady finger", "peas", "potato", "carrot"]
+
+veggies.shift();  // outputs "radish" which means now 'radish' has been removed
+```
+
+> - **The join and split method for arrays**
+
+Sometimes we need a quick’n’easy way to turn an array into a string. That is exactly what join method is for.
+
+the Join method : It joins an array into string using given separator
+
+```
+var veggies = ['clove','brinjal','lady finger','peas','potato','carrot']
+
+var newstring = veggies.join(',')
+
+console.log(newstring)
+```
+
+The split method is opposite of it. 
+
+```
+var x = newstring.split(',')
+console.log(x) ; // logs the array again ['clove','brinjal','lady finger','peas','potato','carrot']
+```
+
+> - **How to truncate the array**
+
+There is a simple way to truncate the array. It's the array.length method. 
+
+```
+var veggies = ['clove','brinjal','lady finger','peas','potato','carrot']
+
+veggies.length = 2 ; 
+
+console.log(veggies) // logs ['clove','brinjal']
+```
+
+
