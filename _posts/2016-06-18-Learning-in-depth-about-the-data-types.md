@@ -4,9 +4,13 @@ layout: post
 ---
 
 ### 4.1 Strings
+
 ### 4.2 Number, Math
+
 ### 4.3 Objects
+
 ### 4.4 Arrays
+
 ---
 
 ---
@@ -291,6 +295,8 @@ console.log(Math.random())
 
 
 ## **4.3 Objects**
+
+
 
 ---
 
