@@ -551,5 +551,74 @@ veggies.pop() // outputs 'beans' and removes it from array(veggies)
 veggies.pop() // outputs 'undefined' and removes it from the array(veggies)
 ```
 
+> - **Removing from arrays**
 
+```
+var arr = ['Body','Mind','Soul']
+ 
+delete arr[1]
+ 
+// now arr = ["Body", undefined, "Soul"]
+alert(arr[1]) // undefined
+
+```
+
+In arrays, the value which is deleted has no value left in that position. Arrays do not adjust their positions after an item is deleted. Hence the index of the existing items stays the same if any item other item is deleted. 
+
+An important thing to note is when an item is deleted, there is no effect on the length of the array as well. 
+
+Let's see how we overcome this small problem of leaving behind empty holes taking up no space in the following section. 
+
+> - **Splice method for arrays**
+
+```
+Syntax : 
+arr.splice(index, deleteCount[, elem1, ..., elemN])
+
+```
+
+Splice method acts as the swiss knife for arrays. It deletes and realigns the position of the items in the arrays as well. 
+
+Let's see few examples for the following. 
+
+```
+var arr = ["Rock", "Paper", "Scissor"]
+ 
+arr.splice(1, 1)  // remove 1 element starting at index 1 i.e. "Paper"
+ 
+console.log(arr) // logs ["Rock", "Scissor"]
+
+arr.length() // outputs 2 in stead of 3
+
+```
+
+The splice method also takes another parameter which takes other items to be appended to the array. Lets see and example to understand clearly. 
+
+
+```
+var arr = ["Ready", "Set", "Go"]
+ 
+arr.splice(1, 2, "Three", "Two", "One", "Go")  // remove 1 element starting at index 1
+
+console.log(arr) // logs ["Ready","Three", "Two", "One", "Go"]
+
+arr.length() // outputs 5 in stead of 3
+
+```
+
+Splice is able to insert elements, just set deleteCount to 0.
+
+```
+var arr = ["lets","party"]
+
+arr.splice(2,0,"this","Saturday")
+
+console.log(arr)
+```
+
+It also can use a negative index, which counts from array end:
+
+```
+
+```
 
