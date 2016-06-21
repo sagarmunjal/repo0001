@@ -515,4 +515,41 @@ veggies.length = 2 ;
 console.log(veggies) // logs ['clove','brinjal']
 ```
 
+> - **Sparse Arrays**
+
+Using the length property of arrays we can create empty arrays i.e. arrays without any items in it. 
+
+```
+var veggies = ['clove','brinjal','lady finger','peas','potato','carrot']; 
+
+veggies.length = 100; 
+
+for(i= 0 ; i<veggies.length;i++){console.log(veggies[i])} // now when u run the for loop after the items are logged you will see undefined items in the arrays. 
+
+```
+
+Another way to play with arrays would be similar.
+
+```
+var veggies = ['clove','brinjal','lady finger','peas','potato','carrot']
+veggies[6] = 'radish'
+veggies[99] = 'beans'
+
+console.log(veggies.length) ; // logs 100 as the length of the array
+```
+
+A thing to note is that arrays are not smart, so they get confused about the indices of the array, however these empty holes never take up any space. 
+
+So if we pop elements from the arrays, it pops out the last 'undefined' item. 
+
+```
+var veggies = ['clove','brinjal','lady finger','peas','potato','carrot']
+veggies[6] = 'radish'
+veggies[99] = 'beans'
+
+veggies.pop() // outputs 'beans' and removes it from array(veggies)
+veggies.pop() // outputs 'undefined' and removes it from the array(veggies)
+```
+
+
 
