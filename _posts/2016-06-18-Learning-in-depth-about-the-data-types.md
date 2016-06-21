@@ -613,12 +613,46 @@ var arr = ["lets","party"]
 
 arr.splice(2,0,"this","Saturday")
 
-console.log(arr)
+console.log(arr) // logs ["lets","party","this","Saturday"]
 ```
 
-It also can use a negative index, which counts from array end:
+It also can use a negative index, which counts from array end
+
+```
+var arr = [1, 2, 5]
+ 
+// at element -1 (pre-last)
+// delete 0 elements,
+// then insert 3 and 4
+arr.splice(-1, 0, 3, 4)
+ 
+alert(arr)  // 1,2,3,4,5
+
 
 ```
 
+> - **Slice method for arrays**
+
+You can also extract a portion of array using slice(begin[, end])
+
+```
+var arr = ["Boozo", "Plays", "Ball"];
+ 
+var arr2 = arr.slice(0,2) // take 2 elements starting at 0
+ 
+console.log(arr2) // ["Why, learn"]
+
 ```
 
+Note that slice method does not change the existing array but simply copies the portion of that array.
+You can omit second argument to get all elements starting with certain index. 
+
+
+```
+var arr = ["Carpe", "Diem", "Dead", "Poet", "Society"];
+ 
+var arr2 = arr.slice(1) // take all elements starting at 1
+ 
+console.log(arr2) // logs ["Diem", "Dead", "Poet", "Society"];
+
+```
