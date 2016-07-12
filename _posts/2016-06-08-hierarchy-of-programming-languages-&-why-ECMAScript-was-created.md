@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 ---
 ## 1. Hierarchy of programming languages ( where does JS fit in the ladder with other programming languages and frameworks ) 
