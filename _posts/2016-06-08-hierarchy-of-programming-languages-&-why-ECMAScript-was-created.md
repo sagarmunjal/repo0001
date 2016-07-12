@@ -14,11 +14,7 @@ layout: post
 
 ### 1. Hierarchy of programming languages ( where does JS fit in the ladder with other programming languages and frameworks )
 
-| Year, Complexity   	|  Examples  						| Interface ( IDE / Compiler )  |
-|---					|---								|---							|
-|  1978 , High 			| C, C++ , Java , Cobol  			| Turbo C  |
-| 1995 , Med  			|  Javascript, Python 				| Javascript Engine like Chrome V8 ( living in web browser ) |
-| 2006, Low  			| JQuery, Angular   				|  Javascript Engine like Chrome V8 ( living in web browser ) because they are made using Javascript |
+![](https://drive.google.com/uc?export=view&id=0B8kNn6zsgGEtNENESUFxV1M3b0k)
 
 
 ---
