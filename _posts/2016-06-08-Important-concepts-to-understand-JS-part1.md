@@ -93,20 +93,34 @@ address : {stree : 'main',
   }
 ```
 
+
 // window object (a global default object) & this (keyword which is a reference to the object that “owns” the currently executing code) are two things are created by default.  
 
 // these are the two default objects which are created whenever we open any browser window. 
 // so as we discussed in the last class about the execution context and we mentioned about Global object, in case of browsers it is the window object that we are refering to. 
 
-// explanation of window object 
+// explanation of window object in browser
+Fire up your browser, open up an "about:blank" page and type 'this' keyword in the console and it returns the Window object i.e. the global object which is created by default whenever the browser opens. Hence we know that this here refers to the current execution context i.e. Window object.
+
+```
+this   // the keyword this returns the window object. 
+```
+Now lets define a variable and function in the console. We would be surprised to see that these values are nothing but stored amongst the collection of key value pairs. 
+We can even look through the Window object and see that the variable and function we define are stored as key value pairs. 
+
+Let's examine the following example
 
 ```
 var firstvar = "what the fork!";
 function foo(){
+console.log('Hey there')
 }
 
-// the code above can be accessed thorugh the following, this means they are sitting at the global object
-window.firstvar;
-window.foo;
-```
+// accessing the same variables using this keyword (here this keyword references to Window Object)
+this.firstvar; // this returns the variable "what the fork!" 
+this.foo;      // this returns the function definition function foo(){console.log('Hey there')}
 
+// the code above can be accessed thorugh the window object, this is an evidence that they are stored as a property in the Window global object
+window.firstvar;  // this returns the variable "what the fork!" 
+window.foo;       // this returns the function definition function foo(){console.log('Hey there')}
+```
