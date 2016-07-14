@@ -1,5 +1,7 @@
 ---
-published: false
+published: true
+preview: null
+layout: post
 ---
 JS: understanding the weird parts
 
