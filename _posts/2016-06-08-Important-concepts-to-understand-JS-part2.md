@@ -1,5 +1,6 @@
 ---
 published: true
+layout: post
 ---
 // The execution context : creation and hoisting 
 
