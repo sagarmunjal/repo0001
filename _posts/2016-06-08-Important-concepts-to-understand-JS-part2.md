@@ -183,6 +183,7 @@ a();
 
 
 ```
+
 ![](https://drive.google.com/uc?export=view&id=0B8kNn6zsgGEtS0RaY3VUUHl0dVE)
 
 Now, in the above example we can see lexical environment in action. Even though execution context b() sits directly above a(). It is sitting at the same level as a that is the global object. 
@@ -190,6 +191,7 @@ Also, we discussed that if function b does not have a value of a variable define
 
 
 Now we will modify the above example a little bit and see how the result changes. 
+
 ```
 function a() {
     var x1 = 'somevalue'
