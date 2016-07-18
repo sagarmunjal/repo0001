@@ -11,6 +11,7 @@ the first phase is called the "creation phase"
 While in this creation phase when the syntax parser goes through the code it recognizes where you have created variables and where you have created functions.
 So it sets up memory space for Variables and Functions "Hoisting "
 
+
 ```
 // case 1 : 
 var a = 'fork the world';
@@ -21,6 +22,7 @@ console.log(a);
 var a = 'fork the world';
 
 ```
+
 // case 1 : 
 We see that we log the value of a and get the value 'fork the world'. Fair enough, eh!
 // case 2 : 
@@ -40,6 +42,7 @@ case 2 :
 foo();
 function foo(){console.log('this is something')}
 ```
+
 Here, it hardly matters that if the function is invoked before or after the function definition, thats because when the memory space is being taken up, then the all the function definitions are also stored in it. Hence the function can be invoked anywhere in the code. 
 
 
@@ -55,6 +58,7 @@ a = 10;
 a = 10 ; 
 console.log(a) // gives value 10 
 ```
+
 undefined : Does not really mean not defined. Yes, it's confusing but do not get confused. 
 As a matter of fact undefined just means that the variable exists but the value of the variable does not. Simple right? Keep reading it until you understand.
 
@@ -62,11 +66,14 @@ Uncaught ReferenceError: a is not defined : This is what means that the value do
 
 
 // test that undefined is really a value in stored in JS engine 
+
+
 ```
 console.log(a);
 var a;
 if(a===undefined){console.log('a is undefined')}else{console.log('a is defined')}
 ```
+
 //Now we discuss the use cases of declaring and assigning value to a variable inside the global scope and inside a function
 
 ```
@@ -128,6 +135,7 @@ b()
 }
 a();
 ```
+
 // Discussing creation of the execution context stack. First lets discuss a simple example. 
 
 Now in the above example we have function b defined, function b invoked inside function a definition and function a invoked. 
@@ -142,6 +150,8 @@ And then the code will be executed in the execution phase line by line.
 ![](https://drive.google.com/uc?export=view&id=0B8kNn6zsgGEtLUhDSUlleHRyalE)
 
 Let's use console.log to see different values and understand practically and we will also discuss what is variable environment. 
+
+
 ```
 function b() {
     var ax = 30;
@@ -158,6 +168,8 @@ console.log(ax)
 a();
 
 ```
+
+
 The above execution context and variable environment can be understood by following chart. 
 in which we will discuss the execution context along with the respective variable environment.
 
@@ -169,6 +181,7 @@ Scope Chain
 
 
 To understand scope chain first lets clearly understand what does reference scoping mean : 
+
 
 ```
 function b() {
@@ -184,6 +197,7 @@ a();
 
 ```
 
+
 ![](https://drive.google.com/uc?export=view&id=0B8kNn6zsgGEtS0RaY3VUUHl0dVE)
 
 Now, in the above example we can see lexical environment in action. Even though execution context b() sits directly above a(). It is sitting at the same level as a that is the global object. 
@@ -191,6 +205,7 @@ Also, we discussed that if function b does not have a value of a variable define
 
 
 Now we will modify the above example a little bit and see how the result changes. 
+
 
 ```
 function a() {
@@ -204,8 +219,10 @@ var x1 = 'anothervalue'
 a();
 ```
 
+
 Now, we have defined b() inside function a() and we know that we have var x1 defined at the execution context of a(). So now when, b() gets invoked and it asks to console.log value of x1, it consoles.log "somevalue" instead of "anothervalue". 
 This is because now the reference to the outer scope has changed to a() rather than the global execution context. So the value of x1 becomes what is defined inside the body of function a() i.e. "somevalue".
+
 
 ```
 function a() {
@@ -217,6 +234,7 @@ function a() {
 var x1 = 'anothervalue'
 a();
 ```
+
 
 Now, if in the case above if value is not defined in the body of function a() also, then the value again is picked from the reference to the outer environment. So, going down the chain of reference to the outer environment until it gets value of x1 defined. This chain is called the scope chain. 
 
@@ -238,6 +256,8 @@ function third() {
 }
 
 ```
+
+
 In the above section we have explained, reference to the outer environment and scope chain. 
 
 ![](https://drive.google.com/uc?export=view&id=0B8kNn6zsgGEtUWt0Y1VCOEpsUmM)
