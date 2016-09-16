@@ -31,6 +31,17 @@ Let's look at the following pointers, how functions are special type of objects:
 
 Well, all the above information is too overwhelming, yes a fair amount of knowledge would help you float your boat but maybe you will find yourself at sea if you just landed here without any prior knowledge. But do not worry, we will explain things in detail below and help you with how functions are the first class objects by end of this chapter. 
 
+Being JS objects implies that JS functions can be stored in variables, passed as arguments to functions, returned by functions, have properties and can be changed dynamically. Therefore, JS functions are first-class citizens, and JavaScript can be viewed as a functional programming language.
+
+The general form of a JS function definition is an assignment of a JS function expression to a variable:
+
+```
+var myMethod = function theNameOfMyMethod( params) {
+  ...
+}
+```
+
+where params is a comma-separated list of parameters (or a parameter record), and theNameOfMyMethod is optional. When it is omitted, the method/function is anonymous. In any case, JS functions are normally invoked via a variable that references the function. In the above case, this means that the JS function is invoked with myMethod(), and not with theNameOfMyMethod(). However, a named JS function can be invoked by name from within the function (for recursion). Consequently, a recursive JS function must be named.
 
 
 #### **3.1 Syntax**
@@ -177,9 +188,3 @@ A function is always an action that is being performed, so the name should alway
 
 
 ---
-
-
-
-
-
-
