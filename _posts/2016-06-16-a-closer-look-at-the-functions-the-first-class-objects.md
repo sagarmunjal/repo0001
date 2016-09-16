@@ -13,6 +13,8 @@ layout: post
 
 ### 3.5 Function naming 
 
+### 3.6 Function Arguments 
+
 ---
 ---
 ---
@@ -83,6 +85,8 @@ var sum = new Function ('x,y', 'return x+y')
 ---
 
 #### **3.2 Declaration and Expression**
+
+
 
 The concept of declaration and expression is very important to understand on the basis of the literal jargon used in programming world. 
 
@@ -188,3 +192,61 @@ A function is always an action that is being performed, so the name should alway
 
 
 ---
+
+
+#### **3.6 Function Arguments 
+
+
+JS functions can have inner functions. The closure mechanism allows a JS function using variables (except this) from its outer scope, and a function created in a closure remembers the environment in which it was created. In the following example, there is no need to pass the outer scope variable result to the inner function via a parameter, as it is readily available:
+
+```
+var sum = function (numbers) {
+  var result = 0;
+  numbers.forEach( function (n) {
+      result = result + n;
+  });
+  return result;
+};
+console.log( sum([1,2,3,4]));  // 10
+```
+
+When a method/function is executed, we can access its arguments within its body by using the built-in arguments object, which is "array-like" in the sense that it has indexed elements and a length property, and we can iterate over it with a normal for loop, but since it's not an instance of Array, the JS array methods (such as the forEach looping method) cannot be applied to it. The arguments object contains an element for each argument passed to the method. This allows defining a method without parameters and invoking it with any number of arguments, like so:
+
+
+```
+var sum = function () {
+  var result = 0, i=0;
+  for (i=0; i < arguments.length; i++) {
+    result = result + arguments[i];
+  }
+  return result;
+};
+console.log( sum(0,1,1,2,3,5,8));  // 20
+
+```
+
+A method defined on the prototype of a constructor function, which can be invoked on all objects created with that constructor, such as Array.prototype.forEach, where Array represents the constructor, has to be invoked with an instance of the class as context object referenced by the this variable (see also the next section on classes). In the following example, the array numbers is the context object in the invocation of forEach:
+
+```
+var numbers = [1,2,3];  // create an instance of Array
+numbers.forEach( function (n) {
+  console.log( n);
+});
+```
+
+Whenever such a prototype method is to be invoked not with a context object, but with an object as an ordinary argument, we can do this with the help of the JS function call method that takes an object, on which the method is invoked, as its first parameter, followed by the parameters of the method to be invoked. For instance, we can apply the forEach looping method to the array-like object arguments in the following way:
+
+```
+var sum = function () {
+  var result = 0;
+  Array.prototype.forEach.call( arguments, function (n) {
+    result = result + n;
+  });
+  return result;
+};
+```
+
+A variant of the Function.prototype.call method, taking all arguments of the method to be invoked as a single array argument, is Function.prototype.apply.
+
+Whenever a method defined for a prototype is to be invoked without a context object, or when a method defined in a method slot (in the context) of an object is to be invoked without its context object, we can bind its this variable to a given object with the help of the JS function bind method (Function.prototype.bind). This allows creating a shortcut for invoking a method, as in var querySel = document.querySelector.bind( document), which allows to use querySel instead of document.querySelector.
+
